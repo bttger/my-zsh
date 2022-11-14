@@ -2,6 +2,8 @@
 
 It may be tempting to quickly install Oh-my-Zsh and Powerlevel10k or other plugin managers. They allow you to configure Zsh in no time without any prior knowledge. But they also bring a lot of bloat with them. Instead, I want to decide for myself what I install on my machine, when I update packages, and be able to follow and customize the configuration process.
 
+![image](https://user-images.githubusercontent.com/49961674/201792373-88dec4d2-7c48-403a-8fc1-a03e9d0f61c1.png)
+
 ## Features
 - Use your OS package manager and source/configure all plugins in a single file
 - Case-insensitive, misspell-forgiving completions
