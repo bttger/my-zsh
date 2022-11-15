@@ -13,7 +13,7 @@ It may be tempting to quickly install Oh-my-Zsh and Powerlevel10k or other plugi
 - Long history with immediate history udpates and duplicate omission (duplicates move to end of history)
 - Commands beginning with space won't be saved in history
 - Clean prompt with git status, exit code of last command if code != 0, and optionally displaying hostname
-- [Autosuggestions based on history](https://github.com/zsh-users/zsh-autosuggestions)
+- [Autosuggestions](https://github.com/zsh-users/zsh-autosuggestions) based on history
 - Search through history for previous commands matching everything up to current cursor position with arrow keys
 - [Syntax highlighting](https://github.com/zsh-users/zsh-syntax-highlighting)
 - Autocomplete with [fzf](https://github.com/junegunn/fzf) fuzzy search
@@ -28,6 +28,12 @@ TODO
 
 ### Arch Linux
 ```
-pacman -Syu TODO
+# Install zsh and some plugins
+pacman -Syu zsh zsh-completions zsh-autosuggestions fzf zsh-syntax-highlighting
+
+# Install the following plugin from AUR
+# git-prompt.zsh
+
+# Make Zsh your default shell
 chsh -s $(which zsh)
 ```
