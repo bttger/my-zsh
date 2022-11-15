@@ -39,14 +39,15 @@ Fuzzy search:
 - <kbd>Ctrl</kbd> + <kbd>T</kbd> to fuzzy search files/directories and paste the selected files/directories onto the command line
 - <kbd>Ctrl</kbd> + <kbd>R</kbd> to fuzzy search the history and paste the selected command onto the command line
 - <kbd>Alt</kbd> + <kbd>C</kbd> to fuzzy search directories and `cd` into the selected directory
-- Type `**``and hit <kbd>Tab</kbd> to fuzzy search files/directories/process IDs/hostnames/environment variables, and autocomplete command
+- Type `**` and hit <kbd>Tab</kbd> to fuzzy search files/directories/process IDs/hostnames/environment variables, and autocomplete command
 
 History search:
 - Type beginning of some command and use <kbd>↑</kbd> and <kbd>↓</kbd> to search through the history for previous commands matching everything up to current cursor position
 
 ## Aliases
-| md     | mkdir -p             |
+| alias     | command             |
 |--------|----------------------|
+|`md`|`mkdir -p`|
 | `rd`     | `rmdir`                |
 | `..`     | `cd ..`                |
 | `....`   | `cd ../..`             |
@@ -59,7 +60,7 @@ History search:
 ### Arch Linux
 ```sh
 # Install zsh and some plugins
-pacman -Syu zsh zsh-completions zsh-autosuggestions fzf zsh-syntax-highlighting
+pacman -S zsh zsh-completions zsh-autosuggestions fzf zsh-syntax-highlighting
 
 # Install the following plugin from AUR
 # git-prompt.zsh
