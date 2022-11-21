@@ -37,6 +37,11 @@ alias ......="cd ../../.."
 alias t="tere --filter-search"
 alias hib="systemctl hibernate"
 
+# Environment Exports
+# Setting the default editor for sudoedit/sudo -e
+export VISUAL=nano
+export EDITOR="$VISUAL"
+
 # https://github.com/mgunyho/tere
 tere() {
     local result=$(command tere "$@")
