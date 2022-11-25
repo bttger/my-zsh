@@ -44,8 +44,12 @@ alias ......="cd ../../.."
 alias t="tere --filter-search"
 alias hib="systemctl hibernate"
 
-# Environment Exports
-# Setting the default editor for sudoedit/sudo -e
+# Env Exports
+# https://zsh.sourceforge.io/Doc/Release/User-Contributions.html#index-match_002dwords_002dby_002dstyle
+# Define how to match "words"; default mode is "normal" (alphanumerical + WORDCHARS)
+# Default WORDCHARS are *?_-.[]~=/&;!#$%^(){}<>
+export WORDCHARS="*?_-.[]~=&;!#$%^(){}<>"
+# Set the default editor for sudoedit or sudo -e
 export VISUAL=nano
 export EDITOR="$VISUAL"
 
