@@ -18,6 +18,9 @@ bindkey -e
 # End of lines configured by zsh-newuser-install
 
 # Key bindings
+# Print current key bindings: bindkey
+# List available key bindings: bindkey -l
+# Interactively show pressed key when pressing any keys
 bindkey "^[[H" beginning-of-line # HOME
 bindkey "^[[F" end-of-line # END
 bindkey "^[[3~" delete-char # DEL
