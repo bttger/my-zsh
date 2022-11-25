@@ -21,10 +21,10 @@ bindkey -e
 bindkey "^[[H" beginning-of-line # HOME
 bindkey "^[[F" end-of-line # END
 bindkey "^[[3~" delete-char # DEL
+bindkey "^[[3;5~" delete-word # CTRL+DEL - delete a whole word after cursor
+bindkey "^H" backward-delete-word # CTRL+BACKSPACE - delete a whole word before cursor
 bindkey "^[[1;5C" forward-word # CTRL+ARROW_RIGHT - move cursor forward one word
 bindkey "^[[1;5D" backward-word # CTRL+ARROW_LEFT - move cursor backward one word
-bindkey "^H" backward-delete-word # CTRL+BACKSLASH - delete a whole word before cursor
-bindkey "^[[3;5~" delete-word # CTRL+DEL - delete a whole word after cursor
 bindkey "^Z" undo # CTRL+Z
 bindkey "^Y" redo # CTRL+Y
 
