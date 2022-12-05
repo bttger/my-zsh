@@ -72,3 +72,20 @@ chsh -s $(which zsh)
 # After making changes to your config, update your running Zsh instance
 source ~/.zshrc
 ```
+
+## Benchmarking
+
+I've profiled the startup time on my old 2 core laptop and it takes about 60ms. Thus, you won't notice any startup lag at all with this zsh config. To run this yourself, load the zprof mod at the beginning of your .zshrc (`zmodload zsh/zprof`) and run `zprof` at the end of the file.
+
+```
+num  calls                time                       self            name
+-----------------------------------------------------------------------------------
+ 1)    1          35.34    35.34   67.64%     19.03    19.03   36.42%  compinit
+ 2)    2          16.31     8.16   31.22%     16.31     8.16   31.22%  compaudit
+ 3)    1           8.39     8.39   16.06%      8.26     8.26   15.81%  _zsh_highlight_load_highlighters
+ 4)    1           6.12     6.12   11.71%      6.12     6.12   11.71%  _zsh_highlight_bind_widgets
+ 5)    1           1.01     1.01    1.94%      1.01     1.01    1.94%  colors
+ 6)    4           0.75     0.19    1.44%      0.75     0.19    1.44%  add-zsh-hook
+ 7)    2           0.55     0.28    1.06%      0.55     0.28    1.06%  is-at-least
+ 8)    1           0.21     0.21    0.41%      0.21     0.21    0.41%  (anon) [/usr/share/zsh/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh:458]
+```
