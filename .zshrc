@@ -38,6 +38,7 @@ bindkey "^Y" redo # CTRL+Y
 # Aliases
 alias md="mkdir -p"
 alias rd="rmdir"
+alias -- -='cd "$OLDPWD"'
 alias ..="cd .."
 alias ....="cd ../.."
 alias ......="cd ../../.."
