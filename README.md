@@ -1,6 +1,6 @@
 # Zsh without bloated plugin or theme manager
 
-It may be tempting to quickly install Oh-my-Zsh and Powerlevel10k or other plugin managers. They allow you to configure Zsh in no time without any prior knowledge. But they also bring a lot of bloat with them. Instead, I want to decide for myself what I install on my machine, when I update packages, and be able to follow and customize the configuration process.
+It may be tempting to quickly install Oh-my-Zsh and Powerlevel10k or other plugin managers. They allow you to configure Zsh in no time without any prior knowledge. But they also bring bloat with them. Instead, I want to decide for myself what I install on my machine, when I update packages, and be able to follow and customize my configuration.
 
 ![image](https://user-images.githubusercontent.com/49961674/201792373-88dec4d2-7c48-403a-8fc1-a03e9d0f61c1.png)
 
@@ -10,13 +10,13 @@ It may be tempting to quickly install Oh-my-Zsh and Powerlevel10k or other plugi
 - Emacs keybindings paired with common text editor keybindings (See [Keybindings](#keybindings))
 - Convenient aliases (See [Aliases](#aliases))
 - [tere](https://github.com/mgunyho/tere) integration for easy and fast directory navigation
-- Long history with immediate history udpates and duplicate omission (duplicates move to end of history)
+- Long history with immediate history updates and duplicate omission (duplicates move to end of history)
 - Commands beginning with space won't be saved in history
 - Clean prompt with git status, exit code of last command if code != 0, and optionally displaying hostname
 - [Autosuggestions](https://github.com/zsh-users/zsh-autosuggestions) based on history
 - Search through history for previous commands matching everything up to current cursor position with arrow keys
 - [Syntax highlighting](https://github.com/zsh-users/zsh-syntax-highlighting)
-- Autocomplete with [fzf](https://github.com/junegunn/fzf) fuzzy search
+- Autocomplete and history search with [fzf](https://github.com/junegunn/fzf) fuzzy search
 
 ## Keybindings
 The default config enables Emacs keybindings but you can disable them or change them to vi by swapping out the `-e` flag with `-v` in [line 17](https://github.com/bttger/my-zsh/blob/main/.zshrc#L17). The following keybindings add features known from common text editors:
