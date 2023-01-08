@@ -116,6 +116,8 @@ zle -N up-line-or-beginning-search
 zle -N down-line-or-beginning-search
 bindkey "^[[A" up-line-or-beginning-search # ARROW_UP
 bindkey "^[[B" down-line-or-beginning-search # ARROW_DOWN
+# -> This only works for prefixes. If you want to match any substring in the history
+#    then https://github.com/zsh-users/zsh-history-substring-search might be interesting
 
 # Must go last (see https://github.com/zsh-users/zsh-syntax-highlighting#why-must-zsh-syntax-highlightingzsh-be-sourced-at-the-end-of-the-zshrc-file)
 source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
