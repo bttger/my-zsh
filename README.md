@@ -71,7 +71,7 @@ History search:
 
 ```sh
 # Install zsh and some plugins
-pacman -S zsh zsh-completions zsh-autosuggestions fzf zsh-syntax-highlighting
+pacman -S zsh zsh-completions zsh-autosuggestions fzf zsh-syntax-highlighting tere
 
 # Install the following plugin from AUR
 # git-prompt.zsh
