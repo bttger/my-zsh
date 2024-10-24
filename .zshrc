@@ -1,4 +1,3 @@
-
 # The following lines were added by compinstall
 
 zstyle ':completion:*' completer _expand _complete _ignored _correct _approximate
@@ -38,8 +37,14 @@ bindkey "^Y" redo # CTRL+Y
 # Aliases
 alias md="mkdir -p"
 alias rd="rmdir"
+alias ......="cd ../../.."
 alias t="tere --filter-search"
 alias hib="systemctl hibernate"
+alias ls="lsd -Al --group-directories-first"
+alias glog="git log --all --decorate --graph --abbrev-commit --format='%C(bold yellow)%h%d%C(reset) - %C(white)%s%C(reset)%n          %C(bold blue)%ar (%ai)%C(reset) %C(bold dim green)%an%C(reset)'"
+alias adog="git log --all --decorate --oneline --graph"
+alias ddc='f() { sudo ddccontrol -r 0x10 -w $1 dev:/dev/i2c-3 };f'
+alias histctx="grep -n '' ~/.histfile | fzf --delimiter : --preview 'bat --style=numbers --color=always --highlight-line {1} ~/.histfile' --preview-window +{1}-/2"
 
 # Env Exports
 # https://zsh.sourceforge.io/Doc/Release/User-Contributions.html#index-match_002dwords_002dby_002dstyle
@@ -47,8 +52,10 @@ alias hib="systemctl hibernate"
 # Default WORDCHARS are *?_-.[]~=/&;!#$%^(){}<>
 export WORDCHARS="*?_-.[]~=&;!#$%^(){}<>"
 # Set the default editor for sudoedit or sudo -e
-export VISUAL=nano
+export VISUAL=micro
 export EDITOR="$VISUAL"
+# fzf default find command (can also use ag (silver surfer), rg (ripgrep), etc.)
+export FZF_DEFAULT_COMMAND='find . \! \( -type d -path ./.git -prune \) \! -type d \! -name '\''*.tags'\'' -printf '\''%P\n'\'
 
 # https://github.com/mgunyho/tere
 tere() {

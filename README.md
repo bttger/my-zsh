@@ -51,17 +51,22 @@ History search:
 
 ## Aliases
 
-| alias    | command                |
-| -------- | ---------------------- |
-| `md`     | `mkdir -p`             |
-| `rd`     | `rmdir`                |
-| `t`      | `tere --filter-search` |
-| `hib`    | `systemctl hibernate`  |
-| `~`      | `cd "$HOME"`\*         |
-| `-`      | `cd "$OLDPWD"`\*       |
-| `..`     | `cd ..`\*              |
-| `....`   | `cd ../..`\*           |
-| `......` | `cd ../../..`\*        |
+| alias     | command                                  |
+| --------- | ---------------------------------------- |
+| `md`      | `mkdir -p`                               |
+| `rd`      | `rmdir`                                  |
+| `t`       | `tere --filter-search`                   |
+| `hib`     | `systemctl hibernate`                    |
+| `ls`      | prettified `lsd`                         |
+| `glog`    | prettified `git log`                     |
+| `adog`    | prettified `git log`                     |
+| `ddc`     | change backlight brightness              |
+| `histctx` | find stuff in shell history with context |
+| `~`       | `cd "$HOME"`\*                           |
+| `-`       | `cd "$OLDPWD"`\*                         |
+| `..`      | `cd ..`\*                                |
+| `....`    | `cd ../..`\*                             |
+| `......`  | `cd ../../..`\*                          |
 
 \*Set by the `autocd` option.
 
@@ -71,7 +76,7 @@ History search:
 
 ```sh
 # Install zsh and some plugins
-pacman -S zsh zsh-completions zsh-autosuggestions fzf zsh-syntax-highlighting tere
+pacman -S zsh zsh-completions zsh-autosuggestions fzf zsh-syntax-highlighting tere micro
 
 # Install the following plugin from AUR
 # git-prompt.zsh
